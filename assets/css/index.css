@@ -49,11 +49,17 @@
 body {
     margin: 0;
     padding: 0;
-    background: var(--primary-color);
+    background: linear-gradient(-45deg, var(--primary-color),rgb(53, 2, 59));
+    background-size: 300% 300%;
+    animation: gradiente 4s ease infinite alternate;
 }
 
 
+
 /* HEADER */
+
+header {
+}
 
 nav {
     width: 100vw;
@@ -62,6 +68,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
 }
 
 nav img {
@@ -119,11 +127,7 @@ nav img {
 
 /* MAIN */
 
-body {
-    background: linear-gradient(-45deg, var(--primary-color),rgb(53, 2, 59));
-    background-size: 300% 300%;
-    animation: gradiente 4s ease infinite alternate;
-}
+
 
 .intro {
     width: 100vw;
