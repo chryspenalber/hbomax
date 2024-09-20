@@ -46,6 +46,10 @@
         background: var(--secondary-color);
       }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -55,10 +59,10 @@ body {
 }
 
 
-
 /* HEADER */
 
-header {
+header {    
+    margin-bottom: 150px;
 }
 
 nav {
@@ -77,13 +81,15 @@ nav img {
     padding: 12px;
 }
 
-.container-button {
+.nav-btn {
     margin: 0px 50px;
     display: flex;
+    flex-direction: row;
+    align-items: center;
     text-align: center;
 }
 
-.container-button a {
+.nav-btn a {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 0.75rem;
@@ -93,19 +99,18 @@ nav img {
     border: none;
     background: none;
     text-transform: uppercase;
-    border-radius: 20px;
-    
+    border-radius: 20px;    
 }
 
-.container-button a {
+
+.nav-btn a {
     text-decoration: none;
     color: var(--btn-link-bg-color);
-
 }
 
 
 #signup {
-    width: 140px;
+    width: 160px;
     background: var(--tertiary-color);
 }
 
@@ -119,7 +124,7 @@ nav img {
     nav {
         display: flex;
         flex-direction: column;
-        height: 5.5rem;
+        height: 7.5rem;
         padding: 20px 0px;
     }
 }
@@ -136,7 +141,10 @@ nav img {
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: #fff;
+    color: #fff;    
+    font-family: Raleway, sans-serif;    
+    text-align: center;
+    
     
 }
 
@@ -145,17 +153,14 @@ nav img {
 }
 
 .intro-text {
-    margin: 50px 0px;
-
+    margin-top: 50px;    
+    font-size: 2rem;
 }
 
 .intro-text p {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
-    text-align: center;
-    font-family: Raleway, sans-serif;
-    font-size: 2rem;
 }
 
 .intro-text p:nth-child(2) {
@@ -163,11 +168,39 @@ nav img {
     font-weight: 600;
 }
 
-.divider {
+#divider {
     width: 50vw;
     height: 5px;
     background: var(--divider-bg-color);
+    margin: 30px;
 }
+
+.offer-price {
+    font-family: Quicksand, sans-serif;
+    font-size: 1.25rem;    
+    font-weight: 400;
+}
+
+.offer-price p {
+    margin: 10px 0px;
+}
+
+
+.offer-price p:nth-child(2) {
+    
+    font-family: Raleway, sans-serif;   
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+#per-month {
+    
+    font-family: Quicksand, sans-serif;
+    font-size: 1.25rem;
+    
+    font-weight: 400;
+}
+
 
 .brands {
     display: flex;
