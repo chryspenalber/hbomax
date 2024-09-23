@@ -99,14 +99,11 @@ nav img {
     border: none;
     background: none;
     text-transform: uppercase;
-    border-radius: 20px;    
-}
-
-
-.nav-btn a {
+    border-radius: 20px;
     text-decoration: none;
     color: var(--btn-link-bg-color);
 }
+
 
 
 #signup {
@@ -144,7 +141,7 @@ nav img {
     color: #fff;    
     font-family: Raleway, sans-serif;    
     text-align: center;
-    
+       
     
 }
 
@@ -193,11 +190,48 @@ nav img {
     font-weight: 600;
 }
 
-#per-month {
+.offer-sign {
+    width: 250px;
+}
+
+.sign-btn {
+    margin: 30px 0px;
+    padding: 16px 40px;
+    border-radius: 500px;    
+    border: none;
+    cursor: pointer;
+    background: var(--btn-bg-color-gradient);
+    outline: 3px solid transparent;
+    transition: background 1s, outline 1s, transform 1s;
+    background-size: 250%;
+    animation: wiggle 2.2s linear infinite;
+
+}
+
+.sign-btn a {    
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 8px 5px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
     
+}
+
+.sign-btn:hover {
+    background-color: transparent;
+    background-position: 100%;
+    outline: 2px solid var(--secondary-color);
+    transform: scale(1.05);
+}
+
+
+
+.offer-info {    
     font-family: Quicksand, sans-serif;
-    font-size: 1.25rem;
-    
+    font-size: 1rem;    
     font-weight: 400;
 }
 
@@ -219,7 +253,31 @@ nav img {
     }     
     100% {
         background-position: 0% 50%;
-    }
+    }  
       
 }
 
+@keyframes wiggle {
+    0%, 10% {
+        transform: rotate(0);
+    }
+    
+    15% {
+        transform: rotate(-15deg);
+    }
+    20% {
+        transform: rotate(10deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    30% {
+        transform: rotate(10deg);
+    }
+    35% {
+        transform: rotate(-10deg);
+    }
+    40%, 100% {
+        transform: rotate(0);
+    }
+}
