@@ -5,20 +5,16 @@
     --primary-color: #020228;
     --secondary-color: #ff00e5;
     --tertiary-color: #b535f6;
-    --btn-bg-color-gradient: linear-gradient(
-      45deg,
-      #9b34ef 0%,
-      #490cb0 20%,
-      transparent 50%
-    );
+    --btn-bg-color-gradient: linear-gradient(45deg,
+            #9b34ef 0%,
+            #490cb0 20%,
+            transparent 50%);
     --btn-link-bg-color: #fff;
     --btn-link-color: #000;
     --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
-    --divider-bg-color: linear-gradient(
-      90deg,
-      #5516ba,
-      rgba(255, 0, 229, 0.5) 80%
-    );
+    --divider-bg-color: linear-gradient(90deg,
+            #5516ba,
+            rgba(255, 0, 229, 0.5) 80%);
     --nav-bg-color: rgba(0, 0, 0, 0.3);
     --text-color: #fff;
     --link-color: #9e86ff;
@@ -29,22 +25,22 @@
     --form-field-error: rgb(255, 76, 76);
 
     scroll-behavior: smooth;
-  }
+}
 
-    /* Custom Scroll */
+/* Custom Scroll */
 
-    ::-webkit-scrollbar {
-        width: 8px;
-      }
-    
-      ::-webkit-scrollbar-thumb {
-        background: var(--tertiary-color);
-        border-radius: 10px;
-      }
-    
-      ::-webkit-scrollbar-thumb:hover {
-        background: var(--secondary-color);
-      }
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--tertiary-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
 
 * {
     box-sizing: border-box;
@@ -53,7 +49,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(-45deg, var(--primary-color),rgb(53, 2, 59));
+    background: linear-gradient(-45deg, var(--primary-color), rgb(53, 2, 59));
     background-size: 300% 300%;
     animation: gradiente 4s ease infinite alternate;
 }
@@ -61,7 +57,7 @@ body {
 
 /* HEADER */
 
-header {    
+header {
     margin-bottom: 150px;
 }
 
@@ -104,8 +100,6 @@ nav img {
     color: var(--btn-link-bg-color);
 }
 
-
-
 #signup {
     width: 160px;
     background: var(--tertiary-color);
@@ -117,7 +111,7 @@ nav img {
     transition: background 1s, color 1s;
 }
 
-@media (max-width: 550px){
+@media (max-width: 550px) {
     nav {
         display: flex;
         flex-direction: column;
@@ -129,6 +123,8 @@ nav img {
 
 /* MAIN */
 
+/* INTRO */
+
 
 
 .intro {
@@ -138,11 +134,11 @@ nav img {
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: #fff;    
-    font-family: Raleway, sans-serif;    
+    color: #fff;
+    font-family: Raleway, sans-serif;
     text-align: center;
-       
-    
+
+
 }
 
 .intro img {
@@ -150,7 +146,7 @@ nav img {
 }
 
 .intro-text {
-    margin-top: 50px;    
+    margin-top: 50px;
     font-size: 2rem;
 }
 
@@ -174,7 +170,7 @@ nav img {
 
 .offer-price {
     font-family: Quicksand, sans-serif;
-    font-size: 1.25rem;    
+    font-size: 1.25rem;
     font-weight: 400;
 }
 
@@ -184,8 +180,8 @@ nav img {
 
 
 .offer-price p:nth-child(2) {
-    
-    font-family: Raleway, sans-serif;   
+
+    font-family: Raleway, sans-serif;
     font-size: 2.5rem;
     font-weight: 600;
 }
@@ -197,7 +193,7 @@ nav img {
 .sign-btn {
     margin: 30px 0px;
     padding: 16px 40px;
-    border-radius: 500px;    
+    border-radius: 500px;
     border: none;
     cursor: pointer;
     background: var(--btn-bg-color-gradient);
@@ -208,7 +204,7 @@ nav img {
 
 }
 
-.sign-btn a {    
+.sign-btn a {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 0.9rem;
@@ -217,7 +213,7 @@ nav img {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 4px;
-    
+
 }
 
 .sign-btn:hover {
@@ -229,9 +225,9 @@ nav img {
 
 
 
-.offer-info {    
+.offer-info {
     font-family: Quicksand, sans-serif;
-    font-size: 1rem;    
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -247,37 +243,166 @@ nav img {
 @keyframes gradiente {
     0% {
         background-position: 0% 50%;
-    }    
+    }
+
     50% {
         background-position: 100% 50%;
-    }     
+    }
+
     100% {
         background-position: 0% 50%;
-    }  
-      
+    }
+
 }
 
 @keyframes wiggle {
-    0%, 10% {
+
+    0%,
+    10% {
         transform: rotate(0);
     }
-    
+
     15% {
         transform: rotate(-15deg);
     }
+
     20% {
         transform: rotate(10deg);
     }
+
     25% {
         transform: rotate(-10deg);
     }
+
     30% {
         transform: rotate(10deg);
     }
+
     35% {
         transform: rotate(-10deg);
     }
-    40%, 100% {
+
+    40%,
+    100% {
         transform: rotate(0);
     }
+}
+
+
+/* PLANS */
+
+
+.divider-gradient {
+    height: 200px;
+    background: linear-gradient(to bottom, transparent, var(--primary-color));
+}
+
+.plans {
+    height: 650px;
+    background: var(--primary-color);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.plans h2 {
+    margin: 0;
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.plans-cards-conteiner {
+    width: 525px;
+    height: 400px;
+    padding: 30px;
+    margin: 30px 60px;
+    background: var(--card-bg-color);
+    border-radius: 10px;
+    font-family: Raleway, sans-serif;
+}
+
+.plans-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.plans-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 25px;
+}
+
+.plans-title h3 {
+    font-size: 1.5rem;
+}
+
+.plans-title p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.plans-title span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+.plans-btn {
+    width: 400px;
+    margin: 30px 0px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    border: none;
+    cursor: pointer;
+    background: var(--btn-bg-color-gradient);
+    outline: 3px solid transparent;
+    transition: background 1s, outline 1s, transform 1s;
+    background-size: 250%;
+    text-align: center;
+    align-self: center;
+
+}
+
+.plans-btn a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 8px 5px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+}
+
+.plans-btn:hover {
+    background-color: transparent;
+    background-position: 100%;
+    outline: 2px solid var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.plans-details {
+    margin-left: -15px;
+}
+
+.plans-details li {
+   font-size: 1.3rem;
+    list-style-type: none;
+   margin: 15px 0px;
+
+}
+
+.plans-details li::before {
+    content: "\00271A";
+    font-size: 14px;
+    position: relative;
+    top: -3px;
+    left: -11px;
 }
