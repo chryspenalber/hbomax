@@ -70,6 +70,7 @@ nav {
     align-items: center;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 nav img {
@@ -311,12 +312,13 @@ nav img {
 }
 
 .plans {
-    height: 780px;
+    height: 150vh;
     background: var(--primary-color);
     color: #fff;
     display: flex;
     flex-direction: column;
 }
+
 
 .plans h2 {
     margin: 0;
@@ -421,11 +423,7 @@ nav img {
     left: -11px;
 }
 
-@media (max-width: 750px) {
-    .plans {
-        height: 160vh;
-    }
-}
+
 
 .plans-conteiner {
     
@@ -449,8 +447,24 @@ nav img {
     transform: rotateY(45deg);
 }
 
+@media (max-width: 1228px) {
+    .plans {
+        height: 275vh;
+    }
+}
+
+@media (max-width: 450px) {
+    .plans {
+        height: 260vh;
+    }
+}
+
 @media (pointer: coarse) {
     .plans-cards-conteiner:has(.plans-cards:nth-child(1):hover) .plans-cards:nth-child(2), .plans-cards-conteiner:has(.plans-cards:nth-child(2):hover) .plans-cards:nth-child(1) {
         transform: none;
     }
+}
+
+main {
+    background: linear-gradient(to bottom, transparent, var(--primary-color));
 }
