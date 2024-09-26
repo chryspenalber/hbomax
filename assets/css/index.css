@@ -297,6 +297,11 @@ nav img {
     background: linear-gradient(to bottom, transparent, var(--primary-color));
 }
 
+#subscription {
+    background-image: url(../images/background-movies-series.png);
+    background-size: cover;
+}
+
 .plans-conteiner {
     display: flex;
     flex-direction: row;
@@ -312,8 +317,6 @@ nav img {
     display: flex;
     flex-direction: column;
 }
-
-
 
 .plans h2 {
     margin: 0;
@@ -332,15 +335,15 @@ nav img {
     background: var(--card-bg-color);
     border-radius: 10px;
     font-family: Raleway, sans-serif;
-    
+
 }
 
-.plans-cards {    
+.plans-cards {
     height: 580px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
 }
 
 .plans-title {
@@ -364,7 +367,6 @@ nav img {
     font-weight: 400;
     color: #fff;
 }
-
 
 .plans-btn {
     width: 435px;
@@ -417,4 +419,38 @@ nav img {
     position: relative;
     top: -3px;
     left: -11px;
+}
+
+@media (max-width: 750px) {
+    .plans {
+        height: 160vh;
+    }
+}
+
+.plans-conteiner {
+    
+    perspective: 2000px;
+    perspective-origin: top;
+}
+
+#card-1 {
+    transition: transform 1s ease-in-out;
+}
+
+#card-2 {
+    transition: transform 1s 
+}
+ #card-1:hover + #card-2 {
+    transform: rotatey(-45deg);
+}
+
+
+.plans-conteiner:has(.plans-cards-conteiner:nth-child(2):hover) .plans-cards-conteiner:nth-child(1) {
+    transform: rotateY(45deg);
+}
+
+@media (pointer: coarse) {
+    .plans-cards-conteiner:has(.plans-cards:nth-child(1):hover) .plans-cards:nth-child(2), .plans-cards-conteiner:has(.plans-cards:nth-child(2):hover) .plans-cards:nth-child(1) {
+        transform: none;
+    }
 }
