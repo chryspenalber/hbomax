@@ -124,6 +124,10 @@ nav img {
 
 /* MAIN */
 
+main {
+    background: linear-gradient(to bottom, transparent, var(--primary-color));
+}
+
 /* INTRO */
 
 
@@ -320,7 +324,7 @@ nav img {
 }
 
 
-.plans h2 {
+.title {
     margin: 0;
     font-family: Raleway, sans-serif;
     font-weight: 500;
@@ -431,14 +435,14 @@ nav img {
     perspective-origin: top;
 }
 
-#card-1 {
+#plan-card-1 {
     transition: transform 1s ease-in-out;
 }
 
-#card-2 {
+#plan-card-2 {
     transition: transform 1s 
 }
- #card-1:hover + #card-2 {
+ #plan-card-1:hover + #plan-card-2 {
     transform: rotatey(-45deg);
 }
 
@@ -465,6 +469,77 @@ nav img {
     }
 }
 
-main {
-    background: linear-gradient(to bottom, transparent, var(--primary-color));
+/* CARDS */
+
+.discover {
+    height:220vh;
+    background: var(--primary-color);
+}
+
+.discover h2 {
+    margin: 0;
+}
+
+.card-conteiner {
+    margin: 50px ;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 40px
+
+}
+
+.card {
+    min-width: 328px;
+    height: 492px;
+    background-size: contain;
+
+}
+
+#card-1 {
+    background-image: url(../images/hbo-default_0.webp);
+}
+
+#card-1:hover {
+    background-image: url(../images/hbo-hover_0.webp);
+}
+
+#card-2 {
+    background-image: url(../images/MAX-Default.webp);
+}
+
+#card-2:hover {
+    background-image: url(../images/MAX-Hover.webp);
+}
+
+#card-3 {
+    background-image: url(../images/DC_Default.webp);
+}
+
+#card-3:hover {
+    background-image: url(../images/DC-Hover.webp);
+}
+
+#card-4 {
+    background-image: url(../images/WB-Default.webp);
+}
+
+#card-4:hover {
+    background-image: url(../images/WB-Hover.webp);
+}
+
+#card-5 {
+    background-image: url(../images/CN-Default.webp);
+}
+
+#card-5:hover {
+    background-image: url(../images/CN-Hover.png);
+}
+
+#card-6 {
+    background-image: url(../images/UCL-Default.webp);
+}
+
+#card-6:hover {
+    background-image: url(../images/UCL-Hover.webp);
 }
