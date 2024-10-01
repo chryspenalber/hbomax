@@ -430,7 +430,7 @@ main {
 
 
 .plans-conteiner {
-    
+
     perspective: 2000px;
     perspective-origin: top;
 }
@@ -440,9 +440,10 @@ main {
 }
 
 #plan-card-2 {
-    transition: transform 1s 
+    transition: transform 1s
 }
- #plan-card-1:hover + #plan-card-2 {
+
+#plan-card-1:hover+#plan-card-2 {
     transform: rotatey(-45deg);
 }
 
@@ -464,7 +465,9 @@ main {
 }
 
 @media (pointer: coarse) {
-    .plans-cards-conteiner:has(.plans-cards:nth-child(1):hover) .plans-cards:nth-child(2), .plans-cards-conteiner:has(.plans-cards:nth-child(2):hover) .plans-cards:nth-child(1) {
+
+    .plans-cards-conteiner:has(.plans-cards:nth-child(1):hover) .plans-cards:nth-child(2),
+    .plans-cards-conteiner:has(.plans-cards:nth-child(2):hover) .plans-cards:nth-child(1) {
         transform: none;
     }
 }
@@ -472,7 +475,8 @@ main {
 /* CARDS */
 
 .discover {
-    height:220vh;
+    padding: 0px 100px;
+    height: 220vh;
     background: var(--primary-color);
 }
 
@@ -481,65 +485,94 @@ main {
 }
 
 .card-conteiner {
-    margin: 50px ;
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    gap: 40px
-
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;   
 }
 
 .card {
-    min-width: 328px;
-    height: 492px;
-    background-size: contain;
-
+    width: 325px;
+    height: 488px;
+    background-size: cover;
+    
 }
 
 #card-1 {
     background-image: url(../images/hbo-default_0.webp);
+    transition: background-image 0.8s ease-in-out, opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+
 }
 
 #card-1:hover {
     background-image: url(../images/hbo-hover_0.webp);
+    transform: scale(1.09);
+    
 }
+
 
 #card-2 {
     background-image: url(../images/MAX-Default.webp);
+    transition: background-image 0.8s ease-in-out, opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
 #card-2:hover {
     background-image: url(../images/MAX-Hover.webp);
+    transform: scale(1.09);
 }
 
 #card-3 {
     background-image: url(../images/DC_Default.webp);
+    transition: background-image 0.8s ease-in-out, opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
 #card-3:hover {
     background-image: url(../images/DC-Hover.webp);
+    transform: scale(1.09);
 }
 
 #card-4 {
     background-image: url(../images/WB-Default.webp);
+    transition: background-image 0.8s ease-in-out, opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
 #card-4:hover {
     background-image: url(../images/WB-Hover.webp);
+    transform: scale(1.09);
 }
 
 #card-5 {
     background-image: url(../images/CN-Default.webp);
+    transition: background-image 0.8s ease-in-out, opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
 #card-5:hover {
     background-image: url(../images/CN-Hover.png);
+    transform: scale(1.09);
 }
 
 #card-6 {
     background-image: url(../images/UCL-Default.webp);
+    transition: background-image 0.8s ease-in-out, opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
 #card-6:hover {
     background-image: url(../images/UCL-Hover.webp);
+    transform: scale(1.09);
+}
+
+
+@media screen and (max-width: 800px) {
+    .card-conteiner {        
+        
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-conteiner {
+        grid-template-columns: repeat(6, 100%);
+        grid-auto-flow: column;
+        overflow: auto hidden;
+    }
 }
