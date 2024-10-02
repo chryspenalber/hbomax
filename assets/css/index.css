@@ -478,6 +478,7 @@ main {
     padding: 0px 100px;
     height: 220vh;
     background: var(--primary-color);
+
 }
 
 .discover h2 {
@@ -487,16 +488,16 @@ main {
 .card-conteiner {
     margin-top: 40px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    justify-items: center;   
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px 150px;
+    justify-items: center;
 }
 
 .card {
     width: 325px;
     height: 488px;
     background-size: cover;
-    
+
 }
 
 #card-1 {
@@ -508,7 +509,7 @@ main {
 #card-1:hover {
     background-image: url(../images/hbo-hover_0.webp);
     transform: scale(1.09);
-    
+
 }
 
 
@@ -562,17 +563,64 @@ main {
     transform: scale(1.09);
 }
 
-
-@media screen and (max-width: 800px) {
-    .card-conteiner {        
-        
-    }
-}
-
 @media screen and (max-width: 480px) {
     .card-conteiner {
         grid-template-columns: repeat(6, 100%);
         grid-auto-flow: column;
         overflow: auto hidden;
+        gap: 40px 167px;
     }
+}
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    
+}
+
+.footer-conteiner {
+    background: var(--primary-color);
+    height: 38vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.footer-links a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    padding: 8px 15px;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+footer p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: var(--link-color);
+}
+
+.footer-logos {
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.footer-logos a {
+    text-decoration: none;
 }
