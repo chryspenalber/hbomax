@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
+:root {
+    --primary-color: #020228;
+    --secondary-color: #ff00e5;
+    --tertiary-color: #b535f6;
+    --btn-bg-color-gradient: linear-gradient(45deg,
+            #9b34ef 0%,
+            #490cb0 20%,
+            transparent 50%);
+    --btn-link-bg-color: #fff;
+    --btn-link-color: #000;
+    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+    --divider-bg-color: linear-gradient(90deg,
+            #5516ba,
+            rgba(255, 0, 229, 0.5) 80%);
+    --nav-bg-color: rgba(0, 0, 0, 0.3);
+    --text-color: #fff;
+    --link-color: #9e86ff;
+    --form-bg-color: rgba(211, 211, 211, 0.06);
+    --form-field-bg-color: rgba(0, 0, 0, 0.2);
+    --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+    --form-field-placeholder: rgba(255, 255, 255, 0.7);
+    --form-field-error: rgb(255, 76, 76);
+
+    scroll-behavior: smooth;
+}
+
+
+/* Custom Scroll */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--tertiary-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--primary-color);
+    background-image: url(../images/background-movies-series.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+
+/* HEADER */
+
+header {
+    margin-bottom: 150px;
+
+}
+
+nav {
+    width: 100%;
+    height: 3.5rem;
+    background-color: var(--nav-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+nav img {
+    width: 10rem;
+    padding: 12px;
+}
+
+.nav-btn {
+    margin: 0px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-btn a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    padding: 8px 15px;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--btn-link-bg-color);
+}
+
+#signup {
+    width: 160px;
+    background: var(--tertiary-color);
+}
+
+#signup:hover {
+    background-color: var(--btn-link-bg-color);
+    color: var(--btn-link-color);
+    transition: background 1s, color 1s;
+}
+
+@media (max-width: 550px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 7.5rem;
+        padding: 20px 0px;
+    }
+}
+
+
+/* MAIN */
+
+main {
+    margin-top: -40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+.login-conteiner {
+    width: 60vw;
+    background-color: rgba(255, 255, 255, 0.04);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+
+}
+
+.login-conteiner h1 {
+
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+input[type=email],
+select {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.3);
+    font-family: 'Raleway', sans-serif;
+}
+
+form {
+    padding: 20px;
+}
+
+input[type=password], select {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.3);
+    font-family: 'Raleway', sans-serif;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.login-form {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.action-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.sign-btn {
+    margin: 30px 0px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    border: none;
+    cursor: pointer;
+    background: var(--btn-bg-color-gradient);
+    outline: 3px solid transparent;
+    transition: background 1s, outline 1s, transform 1s;
+    background-size: 250%;
+    animation: wiggle 2.2s linear infinite;
+
+}
+
+.sign-btn a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 8px 5px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+
+}
+
+.sign-btn:hover {
+    background-color: transparent;
+    background-position: 100%;
+    outline: 2px solid var(--secondary-color);
+}
+
+#forget {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-left: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+
+/* FOOTER */
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+footer {
+    min-height: 80px;
+    background: transparent;
+}
+
+.footer-links a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    padding: 8px 15px;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+footer p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: var(--link-color);
+}
+
+.footer-logos {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.footer-logos a {
+    text-decoration: none;
+}
