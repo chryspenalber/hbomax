@@ -130,7 +130,14 @@ As fontes utilizadas no projeto foram:
 
 <h2 id="demo">🌈 Demonstração</h2>
 
-Você pode acessar ao resultado final do projeto [clicando aqui](https://micheleambrosio.github.io/hbomax/).
+Você pode acessar ao modelo final do projeto feito pela Michele [clicando aqui](https://micheleambrosio.github.io/hbomax/).
+
+<h2 id="author">💻 Aluna</h2>
+<p>
+<img align=left margin=10 width=80 src="https://avatars.githubusercontent.com/u/106619860?v=4"/>
+<p>&nbsp&nbsp&nbspChrystiana Penalber<br>
+  &nbsp&nbsp&nbsp;<a href="https://github.com/chryspenalber">GitHub</a>&nbsp;|&nbsp;<a href="https://www.linkedin.com/in/chrystiana-penalber-81876433/">LinkedIn</a>&nbsp;
+<br/><br/>
 
 
 <h2 id="author">💻 Autora</h2>
@@ -141,6 +148,3 @@ Você pode acessar ao resultado final do projeto [clicando aqui](https://michele
 </p>
 <br/><br/>
 <p>
-
----
-⌨️ com ❤️ por [Michele Ambrosio](https://github.com/micheleambrosio) 😊
