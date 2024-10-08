@@ -47,6 +47,10 @@
     box-sizing: border-box;
 }
 
+html {
+    background: var(--primary-color);
+}
+
 body {
     margin: 0;
     padding: 0;

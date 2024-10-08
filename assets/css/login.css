@@ -144,7 +144,7 @@ main {
 }
 
 .login-conteiner {
-    width: 60vw;
+    width: 75vw;
     background-color: rgba(255, 255, 255, 0.04);
     border-radius: 10px;
     display: flex;
@@ -261,12 +261,17 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-bottom: 40px;
-}
-
-footer {
+    padding-bottom: 40px;    
     min-height: 80px;
     background: transparent;
+    
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer-links a {
@@ -275,13 +280,14 @@ footer {
     font-size: 0.85rem;
     letter-spacing: 2px;
     margin-left: 10px;
-    padding: 8px 15px;
+    padding: 10px 15px;
     border: none;
     background: none;
     text-transform: uppercase;
     border-radius: 20px;
     text-decoration: none;
     color: var(--link-color);
+    
 }
 
 footer p {
@@ -301,4 +307,12 @@ footer p {
 
 .footer-logos a {
     text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
