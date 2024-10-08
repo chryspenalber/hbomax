@@ -136,7 +136,8 @@ Você pode acessar ao modelo final do projeto feito pela Michele [clicando aqui]
 <p>
 <img align=left margin=10 width=80 src="https://avatars.githubusercontent.com/u/106619860?v=4"/>
 <p>&nbsp&nbsp&nbspChrystiana Penalber<br>
-
+  &nbsp&nbsp&nbsp;<a href="https://github.com/chryspenalber">GitHub</a>&nbsp;|&nbsp;<a href="https://www.linkedin.com/in/chrystiana-penalber-81876433/">LinkedIn</a>&nbsp;
+<br/><br/>
 
 
 <h2 id="author">💻 Autora</h2>
