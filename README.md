@@ -134,8 +134,10 @@ Você pode acessar ao modelo final do projeto feito pela Michele [clicando aqui]
 
 <h2 id="author">💻 Aluna</h2>
 <p>
-
+<img align=left margin=10 width=80 src="https://avatars.githubusercontent.com/u/106619860?v=4"/>
 <p>&nbsp&nbsp&nbspChrystiana Penalber<br>
+
+
 
 <h2 id="author">💻 Autora</h2>
 <p>
