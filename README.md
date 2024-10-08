@@ -130,8 +130,12 @@ As fontes utilizadas no projeto foram:
 
 <h2 id="demo">🌈 Demonstração</h2>
 
-Você pode acessar ao resultado final do projeto [clicando aqui](https://micheleambrosio.github.io/hbomax/).
+Você pode acessar ao modelo final do projeto feito pela Michele [clicando aqui](https://micheleambrosio.github.io/hbomax/).
 
+<h2 id="author">💻 Aluna</h2>
+<p>
+
+<p>&nbsp&nbsp&nbspChrystiana Penalber<br>
 
 <h2 id="author">💻 Autora</h2>
 <p>
