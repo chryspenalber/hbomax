@@ -141,6 +141,3 @@ Você pode acessar ao resultado final do projeto [clicando aqui](https://michele
 </p>
 <br/><br/>
 <p>
-
----
-⌨️ com ❤️ por [Michele Ambrosio](https://github.com/micheleambrosio) 😊
