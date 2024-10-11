@@ -343,8 +343,7 @@ section {
 
 
 .title {
-    margin: 0;
-    margin-top: 40px;
+    margin-bottom: 40px;
     font-family: Raleway, sans-serif;
     font-weight: 500;
     font-size: 2rem;
@@ -399,7 +398,7 @@ section {
 }
 
 .plans-btn {
-    width: 435px;
+    max-width: 435px;
     margin: 30px 0px;
     padding: 16px 40px;
     border-radius: 500px;
@@ -494,6 +493,16 @@ section {
     }
 }
 
+/* @media screen and (max-width: 480px) {
+    .plans-cards {
+        max-width: 70%;
+        padding: 20px 10px;
+    }
+
+
+} */
+
+
 @media (pointer: coarse) {
 
     .plans-cards:hover {
@@ -511,12 +520,6 @@ section {
 .discover {
     margin: 100px auto;
 
-}
-
-
-
-.discover h2 {
-    margin: 0;
 }
 
 .card-conteiner {
