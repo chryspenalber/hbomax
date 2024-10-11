@@ -54,7 +54,7 @@ body {
     background-size: 300% 300%;
     background-color: var(--primary-color);
     color: var(--text-color);
-    
+
 }
 
 
@@ -329,6 +329,7 @@ section {
     margin: auto;
     padding: 24px;
     text-align: center;
+
 }
 
 .plans-conteiner {
@@ -343,7 +344,7 @@ section {
     color: #fff;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 
@@ -358,20 +359,25 @@ section {
 }
 
 .plans-cards-conteiner {
-    width: 520px;
-    height: 600px;
-    padding: 30px;
-    background: var(--card-bg-color);
-    border-radius: 10px;
     font-family: Raleway, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+    margin: 40px 0;
+    min-height: 600px;
+
 
 }
 
 .plans-cards {
-    height: 580px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background: var(--card-bg-color);
+    padding: 40px 60px;
+    border-radius: 8px;
+    min-height: 600px;
+    transition: transform 1s ease-in-out;
 
 }
 
@@ -439,6 +445,7 @@ section {
     font-size: 1.3rem;
     list-style-type: none;
     margin-bottom: 20px;
+    text-align: left;
 
 }
 
@@ -475,9 +482,9 @@ section {
     transform: rotateY(45deg);
 }
 
-@media (max-width: 1228px) {
-    .plans {
-        height: 280vh;
+@media screen and (max-width: 1140px) {
+    .plans-cards-conteiner {
+        max-width: 600px;
     }
 }
 
@@ -493,6 +500,10 @@ section {
 
 @media (pointer: coarse) {
 
+    .plans-cards:hover {
+        transform: none;
+    }
+
     .plans-cards-conteiner:has(.plans-cards:nth-child(1):hover) .plans-cards:nth-child(2),
     .plans-cards-conteiner:has(.plans-cards:nth-child(2):hover) .plans-cards:nth-child(1) {
         transform: none;
@@ -502,8 +513,7 @@ section {
 /* CARDS */
 
 .discover {
-    padding: 0px 100px;
-    height: 220vh;
+    margin: 100px auto;
 
 }
 
@@ -523,11 +533,31 @@ section {
 }
 
 .card-conteiner {
-    margin-top: 40px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 24px;
+    text-align: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px 150px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
     justify-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .card-conteiner {
+        gap: 32px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .plans-conteiner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plans-cards-conteiner {
+        max-width: 600px;
+    }
 }
 
 .card {
@@ -600,12 +630,19 @@ section {
     transform: scale(1.09);
 }
 
+@media screen and (max-width: 800px) {
+    .card-conteiner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media screen and (max-width: 480px) {
+    
+
     .card-conteiner {
         grid-template-columns: repeat(6, 100%);
         grid-auto-flow: column;
         overflow: auto hidden;
-        gap: 40px 127px;
     }
 }
 
@@ -670,7 +707,7 @@ footer p {
     .discover {
         height: 300vh;
     }
-    
+
     footer {
         height: 38vh;
     }
