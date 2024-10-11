@@ -306,13 +306,8 @@ nav img {
 
 /* MAIN */
 
-main {
-    background-image: url(../images/background-movies-series.png) no-repeat;
-    background-size: cover;
-}
-
 .subscription {
-    background-image: url(../images/background-movies-series.png) no-repeat;
+    background-image: url("../images/background-movies-series.png") no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -376,6 +371,7 @@ section {
     padding: 40px 60px;
     border-radius: 8px;
     min-height: 600px;
+    max-width: 600px;
     transition: transform 1s ease-in-out;
 
 }
