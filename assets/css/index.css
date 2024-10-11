@@ -495,7 +495,7 @@ section {
 
 @media screen and (max-width: 480px) {
     .plans-cards {
-        max-width: 70%;
+        max-width: 90%;
         padding: 20px 10px;
     }
 
