@@ -493,14 +493,14 @@ section {
     }
 }
 
-/* @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .plans-cards {
         max-width: 70%;
         padding: 20px 10px;
     }
 
 
-} */
+}
 
 
 @media (pointer: coarse) {
