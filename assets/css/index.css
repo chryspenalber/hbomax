@@ -244,66 +244,6 @@ nav img {
     gap: 10px;
 }
 
-
-
-@media (max-width: 550px) {
-    nav {
-        display: flex;
-        flex-direction: column;
-        height: 7.5rem;
-        padding: 20px 0px;
-    }
-}
-
-@keyframes gradiente {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-
-}
-
-@keyframes wiggle {
-
-    0%,
-    10% {
-        transform: rotate(0);
-    }
-
-    15% {
-        transform: rotate(-15deg);
-    }
-
-    20% {
-        transform: rotate(10deg);
-    }
-
-    25% {
-        transform: rotate(-10deg);
-    }
-
-    30% {
-        transform: rotate(10deg);
-    }
-
-    35% {
-        transform: rotate(-10deg);
-    }
-
-    40%,
-    100% {
-        transform: rotate(0);
-    }
-}
-
-
 /* MAIN */
 
 .subscription {
@@ -452,7 +392,6 @@ section {
 }
 
 
-
 .plans-conteiner {
 
     perspective: 2000px;
@@ -476,44 +415,7 @@ section {
     transform: rotateY(45deg);
 }
 
-@media screen and (max-width: 1140px) {
-    .plans-cards-conteiner {
-        max-width: 600px;
-    }
-}
 
-@media screen and (max-width: 1140px) {
-    .plans-conteiner {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .plans-cards-conteiner {
-        max-width: 600px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .plans-cards {
-        max-width: 90%;
-        padding: 20px 10px;
-    }
-
-
-}
-
-
-@media (pointer: coarse) {
-
-    .plans-cards:hover {
-        transform: none;
-    }
-
-    .plans-cards-conteiner:has(.plans-cards:nth-child(1):hover) .plans-cards:nth-child(2),
-    .plans-cards-conteiner:has(.plans-cards:nth-child(2):hover) .plans-cards:nth-child(1) {
-        transform: none;
-    }
-}
 
 /* CARDS */
 
@@ -530,14 +432,6 @@ section {
     gap: 40px;
     justify-items: center;
 }
-
-@media screen and (max-width: 1200px) {
-    .card-conteiner {
-        gap: 32px;
-    }
-}
-
-
 
 .card {
     width: 325px;
@@ -609,19 +503,7 @@ section {
     transform: scale(1.09);
 }
 
-@media screen and (max-width: 800px) {
-    .card-conteiner {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
-@media screen and (max-width: 480px) {
-    .card-conteiner {
-        grid-template-columns: repeat(6, 100%);
-        grid-auto-flow: column;
-        overflow: auto hidden;
-    }
-}
 
 /* FOOTER */
 
@@ -667,5 +549,123 @@ footer p {
 
 .footer-logos a {
     text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 550px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 7.5rem;
+        padding: 20px 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card-conteiner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-conteiner {
+        grid-template-columns: repeat(6, 100%);
+        grid-auto-flow: column;
+        overflow: auto hidden;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .plans-cards-conteiner {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .plans-conteiner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plans-cards-conteiner {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .plans-cards {
+        max-width: 90%;
+        padding: 20px 10px;
+    }
+}
+
+@media (pointer: coarse) {
+
+    .plans-cards:hover {
+        transform: none;
+    }
+
+    .plans-cards-conteiner:has(.plans-cards:nth-child(1):hover) .plans-cards:nth-child(2),
+    .plans-cards-conteiner:has(.plans-cards:nth-child(2):hover) .plans-cards:nth-child(1) {
+        transform: none;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .card-conteiner {
+        gap: 32px;
+    }
+}
+
+/* KEY FRAMES */
+
+@keyframes gradiente {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+@keyframes wiggle {
+
+    0%,
+    10% {
+        transform: rotate(0);
+    }
+
+    15% {
+        transform: rotate(-15deg);
+    }
+
+    20% {
+        transform: rotate(10deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    30% {
+        transform: rotate(10deg);
+    }
+
+    35% {
+        transform: rotate(-10deg);
+    }
+
+    40%,
+    100% {
+        transform: rotate(0);
+    }
 }
 
