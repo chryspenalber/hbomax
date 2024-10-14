@@ -298,8 +298,6 @@ section {
     gap: 80px;
     margin: 40px 0;
     min-height: 600px;
-
-
 }
 
 .plans-cards {
@@ -440,6 +438,11 @@ section {
 
 }
 
+.card:hover {
+    border-radius: 8px;
+    border: 2px solid var(--card-bg-color);
+}
+
 #card-1 {
     background-image: url(../images/hbo-default_0.webp);
     transition: background-image 0.8s ease-in-out, opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
@@ -566,6 +569,19 @@ footer p {
     .card-conteiner {
         grid-template-columns: repeat(2, 1fr);
     }
+    
+    .plans-cards-conteiner:has(.plans-cards:nth-child(1):hover) .plans-cards:nth-child(2),
+    .plans-cards-conteiner:has(.plans-cards:nth-child(2):hover) .plans-cards:nth-child(1) {
+        transform: none;
+    }
+
+    #plan-card-1:hover+#plan-card-2 {
+        transform: none;
+    }
+
+    .plans-conteiner:has(.plans-cards-conteiner:nth-child(2):hover) .plans-cards-conteiner:nth-child(1) {
+        transform: none;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -608,6 +624,14 @@ footer p {
 
     .plans-cards-conteiner:has(.plans-cards:nth-child(1):hover) .plans-cards:nth-child(2),
     .plans-cards-conteiner:has(.plans-cards:nth-child(2):hover) .plans-cards:nth-child(1) {
+        transform: none;
+    }
+
+    #plan-card-1:hover+#plan-card-2 {
+        transform: none;
+    }
+    
+    .plans-conteiner:has(.plans-cards-conteiner:nth-child(2):hover) .plans-cards-conteiner:nth-child(1) {
         transform: none;
     }
 }
